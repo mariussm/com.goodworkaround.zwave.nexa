@@ -2,6 +2,7 @@
   "id": "com.goodworkaround.zwave.nexa",
   "version": "1.0.0",
   "compatibility": ">=12.4.0",
+  "brandColor": "#FF0000",
   "sdk": 3,
   "platforms": [
     "local"

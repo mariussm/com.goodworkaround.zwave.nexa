@@ -1,3 +1,159 @@
 {
-  "_comment": "This file is generated. Please edit .homeycompose/app.json instead."
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.goodworkaround.zwave.nexa",
+  "version": "1.0.0",
+  "compatibility": ">=12.4.0",
+  "brandColor": "#FF0000",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Nexa Zwave Devices"
+  },
+  "description": {
+    "en": "Adds support for Nexa Z-wave devices"
+  },
+  "category": [
+    "appliances"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Marius Solbakken Mellum",
+    "email": "marius.msm@gmail.com"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Nexa AN196"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "images": {
+        "small": "/drivers/an196/assets/images/small.png",
+        "large": "/drivers/an196/assets/images/large.png",
+        "xlarge": "/drivers/an196/assets/images/xlarge.png"
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "zwave": {
+        "manufacturerId": 96,
+        "productTypeId": [
+          4
+        ],
+        "productId": [
+          14
+        ],
+        "learnmode": {
+          "instruction": {
+            "en": "Press the button on your device three times with 1.5 seconds"
+          }
+        },
+        "associationGroups": [
+          3
+        ],
+        "multiChannelNodes": {
+          "2": {
+            "name": {
+              "en": "Nexa AN196 Channel 2"
+            },
+            "class": "socket",
+            "capabilities": [
+              "onoff"
+            ]
+          }
+        }
+      },
+      "id": "an196",
+      "settings": [
+        {
+          "id": "switch_1_type",
+          "type": "number",
+          "label": {
+            "en": "Switch 1 type"
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 1
+          },
+          "hint": {
+            "en": "0 = momentary, 1 = toggle"
+          },
+          "zwave": {
+            "index": 1,
+            "size": 1
+          }
+        },
+        {
+          "id": "switch_2_type",
+          "type": "number",
+          "label": {
+            "en": "Switch 2 type"
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 1
+          },
+          "hint": {
+            "en": "0 = momentary, 1 = toggle"
+          },
+          "zwave": {
+            "index": 2,
+            "size": 1
+          }
+        },
+        {
+          "id": "remember_relay_1",
+          "type": "number",
+          "label": {
+            "en": "Remember relay 1"
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 1
+          },
+          "hint": {
+            "en": "1 = remember, 0 do not remember"
+          },
+          "zwave": {
+            "index": 5,
+            "size": 1
+          }
+        },
+        {
+          "id": "remember_relay_2",
+          "type": "number",
+          "label": {
+            "en": "Remember relay 2"
+          },
+          "value": 1,
+          "attr": {
+            "min": 0,
+            "max": 1
+          },
+          "hint": {
+            "en": "1 = remember, 0 do not remember"
+          },
+          "zwave": {
+            "index": 6,
+            "size": 1
+          }
+        }
+      ]
+    }
+  ]
 }
