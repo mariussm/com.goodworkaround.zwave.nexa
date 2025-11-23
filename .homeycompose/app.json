@@ -2,6 +2,7 @@
   "id": "com.goodworkaround.zwave.nexa",
   "version": "1.0.0",
   "compatibility": ">=12.4.0",
+  "brandColor": "#FF0000",
   "sdk": 3,
   "platforms": [
     "local"
@@ -21,6 +22,7 @@
     "large": "/assets/images/large.png",
     "xlarge": "/assets/images/xlarge.png"
   },
+  "support": "https://github.com/mariussm/com.goodworkaround.zwave.nexa/issues",
   "author": {
     "name": "Marius Solbakken Mellum",
     "email": "marius.msm@gmail.com"
