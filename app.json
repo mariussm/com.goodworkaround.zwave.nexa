@@ -23,6 +23,7 @@
     "large": "/assets/images/large.png",
     "xlarge": "/assets/images/xlarge.png"
   },
+  "support": "https://github.com/mariussm/com.goodworkaround.zwave.nexa/issues",
   "author": {
     "name": "Marius Solbakken Mellum",
     "email": "marius.msm@gmail.com"
